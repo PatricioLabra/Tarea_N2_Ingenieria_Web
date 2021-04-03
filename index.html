@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <form class="formulario" action="#" method="post">
+      <fieldset>
+        <legend>Formulario de solicitud</legend>
+        <ul>
+          <li>
+            <label for="nombre">Nombres:</label>
+            <input type="text" name="nombre" placeholder="Nombres">
+          </li>
+          <li>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" placeholder="Apellidos">
+          </li>
+          <li>
+            <label for="rut">RUT:</label>
+            <input type="text" name="rut" placeholder="0000000000"><span>-</span> <input type="text" name="digito" placeholder="k" >
+          </li>
+          <li>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" name="correo" placeholder="example@mail.com">
+          </li>
+          <li>
+            <label for="telefono">Teléfono:</label>
+            <input type="number" name="telefono" placeholder="000000000">
+          </li>
+          <li>
+            <label for="lenguajes">Selecciona 1 o más lenguajes de programación de su interés:</label><br>
+              <input type="checkbox" name="python" value="1"><span>Python</span><br>
+              <input type="checkbox" name="python" value="2"><span>Java</span><br>
+              <input type="checkbox" name="python" value="3"><span>TypeScript</span><br>
+              <input type="checkbox" name="python" value="4"><span>PHP</span><br>
+              <input type="checkbox" name="python" value="5"><span>C#</span><br>
+              <input type="checkbox" name="python" value="6"><span>C++</span><br>
+          </li>
+          <li>
+            <label for="nivel">¿Cual es su nivel de conocimiento en programación?</label><br>
+            <input type="range" name="" value="">
+          </li>
+          <li>
+            <label for="experiencia">¿Cuantos años de experiencia laboral tiene?</label><br>
+            <input type="radio" name="experiencia" value="1"><span>1</span>
+            <input type="radio" name="experiencia" value="2"><span>2</span>
+            <input type="radio" name="experiencia" value="3"><span>3</span>
+            <input type="radio" name="experiencia" value="4"><span>4</span>
+            <input type="radio" name="experiencia" value="5"><span>5</span>
+           </li>
+          <li>
+            <label for="descripcion">Una descripcion breve acerca de usted:</label><br>
+            <textarea name="name" rows="8" cols="80"></textarea>
+          </li>
+
+          <li class="button">
+            <button type="reset" name="button">Limpiar Datos</button>  <!-- a lo mejor hay que programar la funcion-->
+            <button type="submit" name="button">Enviar Datos</button>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>
