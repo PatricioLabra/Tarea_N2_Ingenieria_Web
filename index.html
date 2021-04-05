@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
+
     <form class="formulario" action="#" method="post">
       <fieldset>
         <legend>Formulario de solicitud</legend>
         <ul>
           <li>
             <label for="nombre">Nombres:</label>
-            <input type="text" name="nombre" placeholder="Nombres">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombres">
           </li>
           <li>
             <label for="apellidos">Apellidos:</label>
-            <input type="text" name="apellidos" placeholder="Apellidos">
+            <input type="text" id="apellido" name="apellidos" placeholder="Apellidos">
           </li>
           <li>
             <label for="rut">RUT:</label>
-            <input type="text" name="rut" placeholder="0000000000"><span>-</span> <input type="text" name="digito" placeholder="k" >
+            <input type="text" id="rut" name="rut" placeholder="0000000000"><span>-</span> <input type="text"  id="digito" name="digito" placeholder="k" >
           </li>
           <li>
             <label for="correo">Correo Electrónico:</label>
-            <input type="email" name="correo" placeholder="example@mail.com">
+            <input type="email" id="correo" name="correo" placeholder="example@mail.com">
           </li>
           <li>
             <label for="telefono">Teléfono:</label>
-            <input type="number" name="telefono" placeholder="000000000">
+            <input type="number" id="telefono" name="telefono" placeholder="000000000">
           </li>
+          <br>
           <li>
             <label for="lenguajes">Selecciona 1 o más lenguajes de programación de su interés:</label><br>
               <input type="checkbox" name="python" value="1"><span>Python</span><br>
@@ -40,10 +42,12 @@
               <input type="checkbox" name="python" value="5"><span>C#</span><br>
               <input type="checkbox" name="python" value="6"><span>C++</span><br>
           </li>
+          <br>
           <li>
             <label for="nivel">¿Cual es su nivel de conocimiento en programación?</label><br>
-            <input type="range" name="" value="">
+            <input type="range" id="nivel" name="nivel" value="" min="0" max="100">
           </li>
+          <br>
           <li>
             <label for="experiencia">¿Cuantos años de experiencia laboral tiene?</label><br>
             <input type="radio" name="experiencia" value="1"><span>1</span>
@@ -52,9 +56,10 @@
             <input type="radio" name="experiencia" value="4"><span>4</span>
             <input type="radio" name="experiencia" value="5"><span>5</span>
            </li>
+           <br>
           <li>
             <label for="descripcion">Una descripcion breve acerca de usted:</label><br>
-            <textarea name="name" rows="8" cols="80"></textarea>
+            <textarea  id="descripcion" name="name" rows="8" cols="80"></textarea>
           </li>
 
           <li class="button">

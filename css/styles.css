@@ -1,0 +1,39 @@
+body{
+  background-image: url("/img/fondo.jpg");
+  background-size: 1500px;
+}
+form.formulario{
+  margin-left: 0.8%;
+  margin-top: 0.8%;
+  margin-right: 0.8%;
+  border: 0.5em solid black;
+  border-radius: 50px;
+  border-style:outset;
+  border-color: gray;
+}
+fieldset{
+  margin: 2%;
+}
+legend{
+  font-family:sans-serif;
+  text-shadow: 4px 4px 4px black;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  padding-left: 27%;
+  margin-bottom: 50px;
+  font-variant: small-caps;
+  font-synthesis: style;
+  font-language-override: normal;
+  font-kerning: normal;
+}
+fieldset ul li{
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  font-weight: bolder;
+  font-weight: 100;
+  font-weight: lighter;
+  font-style: oblique;
+  text-shadow: 1px 1px 1px black;
+}
