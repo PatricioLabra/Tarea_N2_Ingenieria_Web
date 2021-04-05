@@ -12,60 +12,96 @@
       <fieldset>
         <legend>Formulario de solicitud</legend>
         <ul>
-          <li>
-            <label for="nombre">Nombres:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombres">
-          </li>
-          <li>
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellido" name="apellidos" placeholder="Apellidos">
-          </li>
-          <li>
-            <label for="rut">RUT:</label>
-            <input type="text" id="rut" name="rut" placeholder="0000000000"><span>-</span> <input type="text"  id="digito" name="digito" placeholder="k" >
-          </li>
-          <li>
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" placeholder="example@mail.com">
-          </li>
-          <li>
-            <label for="telefono">Teléfono:</label>
-            <input type="number" id="telefono" name="telefono" placeholder="000000000">
-          </li>
-          <br>
-          <li>
-            <label for="lenguajes">Selecciona 1 o más lenguajes de programación de su interés:</label><br>
-              <input type="checkbox" name="python" value="1"><span>Python</span><br>
-              <input type="checkbox" name="python" value="2"><span>Java</span><br>
-              <input type="checkbox" name="python" value="3"><span>TypeScript</span><br>
-              <input type="checkbox" name="python" value="4"><span>PHP</span><br>
-              <input type="checkbox" name="python" value="5"><span>C#</span><br>
-              <input type="checkbox" name="python" value="6"><span>C++</span><br>
-          </li>
-          <br>
-          <li>
-            <label for="nivel">¿Cual es su nivel de conocimiento en programación?</label><br>
-            <input type="range" id="nivel" name="nivel" value="" min="0" max="100">
-          </li>
-          <br>
-          <li>
-            <label for="experiencia">¿Cuantos años de experiencia laboral tiene?</label><br>
-            <input type="radio" name="experiencia" value="1"><span>1</span>
-            <input type="radio" name="experiencia" value="2"><span>2</span>
-            <input type="radio" name="experiencia" value="3"><span>3</span>
-            <input type="radio" name="experiencia" value="4"><span>4</span>
-            <input type="radio" name="experiencia" value="5"><span>5</span>
-           </li>
-           <br>
-          <li>
-            <label for="descripcion">Una descripcion breve acerca de usted:</label><br>
-            <textarea  id="descripcion" name="name" rows="8" cols="80"></textarea>
-          </li>
 
-          <li class="button">
-            <button type="reset" name="button">Limpiar Datos</button>  <!-- a lo mejor hay que programar la funcion-->
-            <button type="submit" name="button">Enviar Datos</button>
-          </li>
+          <div class="nombres">
+            <li>
+              <label for="nombre"><i class="fas fa-user"></i>Nombres:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Nombres">
+            </li>
+          </div>
+
+          <div class="apellidos">
+            <li>
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellido" name="apellidos" placeholder="Apellidos">
+            </li>
+          </div>
+
+          <div class="rut">
+            <li>
+              <label for="rut">RUT:</label>
+              <input type="text" id="rut" name="rut" placeholder="0000000000"><span>-</span> <input type="text"  id="digito" name="digito" placeholder="k" >
+            </li>
+          </div>
+
+          <div class="correo">
+            <li>
+              <label for="correo">Correo Electrónico:</label>
+              <input type="email" id="correo" name="correo" placeholder="example@mail.com">
+            </li>
+          </div>
+
+          <div class="telefono">
+            <li>
+              <label for="telefono">Teléfono:</label>
+              <input type="number" id="telefono" name="telefono" placeholder="000000000">
+            </li>
+          </div>
+
+          <br>
+
+          <div class="lenguaje">
+            <li>
+              <label for="lenguajes">Selecciona 1 o más lenguajes de programación de su interés:</label><br>
+                <br>
+                <input type="checkbox" name="python" value="1"><span>Python</span><br>
+                <input type="checkbox" name="python" value="2"><span>Java</span><br>
+                <input type="checkbox" name="python" value="3"><span>TypeScript</span><br>
+                <input type="checkbox" name="python" value="4"><span>PHP</span><br>
+                <input type="checkbox" name="python" value="5"><span>C#</span><br>
+                <input type="checkbox" name="python" value="6"><span>C++</span><br>
+            </li>
+          </div>
+
+          <br>
+
+          <div class="nivel">
+            <li>
+              <label for="nivel">¿Cual es su nivel de conocimiento en programación?</label><br>
+              <input type="range" id="nivel" name="nivel" value="" min="0" max="100">
+            </li>
+          </div>
+
+          <br>
+
+          <div class="experiencia">
+            <li>
+              <label for="experiencia">¿Cuantos años de experiencia laboral tiene?</label><br>
+
+              <input type="radio" name="experiencia" value="1"><span>1</span>
+              <input type="radio" name="experiencia" value="2"><span>2</span>
+              <input type="radio" name="experiencia" value="3"><span>3</span>
+              <input type="radio" name="experiencia" value="4"><span>4</span>
+              <input type="radio" name="experiencia" value="5"><span>5</span>
+             </li>
+          </div>
+
+           <br>
+
+           <div class="descripcion">
+            <li>
+             <label for="descripcion">Una descripcion breve acerca de usted:</label><br>
+             <textarea  id="descripcion" name="name" rows="8" cols="80" maxlength="300"></textarea>
+           </li>
+           </div>
+
+          <div class="boton">
+            <li>
+              <button type="reset" name="button">Limpiar Datos</button>  <!-- a lo mejor hay que programar la funcion-->
+              <button type="submit" name="button">Enviar Datos</button>
+            </li>
+          </div>
+
         </ul>
       </fieldset>
     </form>

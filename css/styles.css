@@ -1,7 +1,8 @@
 body{
   background-image: url("/img/fondo.jpg");
-  background-size: 1500px;
+  background-size: 1600px;
 }
+
 form.formulario{
   margin-left: 0.8%;
   margin-top: 0.8%;
@@ -11,24 +12,30 @@ form.formulario{
   border-style:outset;
   border-color: gray;
 }
+
 fieldset{
-  margin: 2%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
 legend{
-  font-family:sans-serif;
+  font-family:serif;
   text-shadow: 4px 4px 4px black;
   font-size: 50px;
   color: white;
   font-weight: bold;
-  padding-left: 27%;
+  padding-left: 20%;
   margin-bottom: 50px;
   font-variant: small-caps;
   font-synthesis: style;
   font-language-override: normal;
   font-kerning: normal;
 }
+
 fieldset ul li{
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   font-weight: bolder;
@@ -36,4 +43,66 @@ fieldset ul li{
   font-weight: lighter;
   font-style: oblique;
   text-shadow: 1px 1px 1px black;
+}
+
+div.nombres{
+  display: inline-flex;
+  margin-right: 15%;
+  margin-bottom: 2%;
+}
+
+div.apellidos {
+  display: inline-flex;
+  margin-right: 15%;
+  margin-bottom: 2%;
+}
+
+div.rut{
+  display: inline-flex;
+  margin-bottom: 2%;
+}
+
+div.correo{
+  display: inline-flex;
+  margin-bottom: 2%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+div.telefono{
+  display: inline-flex;
+  margin-bottom: 2%;
+}
+
+div.boton button{
+  margin-top: 2%;
+  margin-left: 25%;
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px black;
+  color: #fff;
+  background-color: #4c4a95;
+  border-color: #fff;
+  border-width: thick;
+  font-weight:600;
+}
+
+#digito{
+  width: 15px;
+  text-align: center;
+}
+
+#telefono{
+  width: 100px;
+}
+
+#descripcion{
+  margin-top: 1%;
+  width: 600px;
+  height: 60px;
+  text-align: justify;
+}
+
+#rut{
+  width: 80px;
+  text-align: center;
 }
