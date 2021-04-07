@@ -7,11 +7,6 @@ var telefono;
 var mensaje = document.getElementById("mensaje");
 var validacion = false;
 var rutCompleto;
-//limpiar pantalla
-formulario.addEventListener("onclick", function (evento) {
-    limpiarDatos();
-    evento.preventDefault();
-});
 //formulario enviado
 formulario.addEventListener("submit", function (evento) {
     rut = document.getElementById("rut");

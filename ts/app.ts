@@ -7,11 +7,6 @@ let mensaje:any = document.getElementById("mensaje");
 let validacion:boolean = false;
 let rutCompleto:any;
 
-//limpiar pantalla
-formulario.addEventListener("onclick",function (evento:any){
-  limpiarDatos();
-  evento.preventDefault();
-});
 
 //formulario enviado
 formulario.addEventListener("submit", function (evento:any){
