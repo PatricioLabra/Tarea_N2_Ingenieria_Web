@@ -111,6 +111,7 @@ div.boton button{
 #rut{
   width: 80px;
   text-align: center;
+  margin-right: 5px;
 }
 
 #correo{

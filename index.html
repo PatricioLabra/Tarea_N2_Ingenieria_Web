@@ -34,7 +34,7 @@
           <div class="rut">
             <li>
               <label for="rut">RUT:</label>
-              <input type="text" id="rut" name="rut" placeholder="XXXXXXXX" maxlength="8"required><span>-</span> <input type="text"  id="digito" name="digito" placeholder="X" maxlength="1"required >
+              <input type="text" id="rut" name="rut" placeholder="XXXXXXXX" maxlength="10"required><span>-</span> <input type="text"  id="digito" name="digito" placeholder="X" maxlength="1"required >
             </li>
           </div>
 
@@ -54,7 +54,7 @@
 
           <br>
 
-          <div class="lenguaje">
+          <div class="lenguaje" id="lenguaje">
             <li>
               <label for="lenguajes" >Selecciona 1 o más lenguajes de programación de su interés:</label><br>
                 <br>
@@ -69,7 +69,7 @@
 
           <br>
 
-          <div class="nivel">
+          <div class="nivel" id="nivel">
             <li>
               <label for="nivel">¿Cual es su nivel de conocimiento en programación?</label><br>
               <input type="range" id="nivel" name="nivel" min="0" max="10" step="1">
@@ -78,7 +78,7 @@
 
           <br>
 
-          <div class="experiencia">
+          <div class="experiencia" id="experiencia">
             <li>
               <label for="experiencia">¿Cuantos años de experiencia laboral tiene?</label><br>
 
@@ -101,7 +101,7 @@
 
           <div class="boton">
             <li>
-              <button type="button" name="button" id="limpiarDatos">Limpiar Datos</button>  <!--programar la funcion-->
+              <button type="reset" onclick="limpiarDatos()"  id="limpiarDatos">Limpiar Datos</button>  <!--programar la funcion-->
               <button type="submit" name="button" id="enviarDatos" >Enviar Datos</button>
             </li>
           </div>
