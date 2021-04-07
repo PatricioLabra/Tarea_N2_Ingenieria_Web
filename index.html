@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Formulario</title>
+
     <!--estilos-->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
 
   </head>
   <body>
+    <div id="mensaje"></div>
 
-    <form class="formulario" action="#" method="post">
+    <form id="formulario"  action="#" method="post" >
       <fieldset>
         <legend>Formulario de solicitud</legend>
         <ul>
@@ -18,35 +20,35 @@
           <div class="nombres">
             <li>
               <label for="nombre"><i class="fas fa-user"></i>Nombres:</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Nombres">
+              <input type="text" id="nombre" name="nombre" placeholder="Nombres" required>
             </li>
           </div>
 
           <div class="apellidos">
             <li>
               <label for="apellidos">Apellidos:</label>
-              <input type="text" id="apellido" name="apellidos" placeholder="Apellidos">
+              <input type="text" id="apellido" name="apellidos" placeholder="Apellidos" required>
             </li>
           </div>
 
           <div class="rut">
             <li>
               <label for="rut">RUT:</label>
-              <input type="text" id="rut" name="rut" placeholder="0000000000"><span>-</span> <input type="text"  id="digito" name="digito" placeholder="k" >
+              <input type="text" id="rut" name="rut" placeholder="XXXXXXXX" maxlength="8"required><span>-</span> <input type="text"  id="digito" name="digito" placeholder="X" maxlength="1"required >
             </li>
           </div>
 
           <div class="correo">
             <li>
               <label for="correo">Correo Electrónico:</label>
-              <input type="email" id="correo" name="correo" placeholder="example@mail.com">
+              <input type="email" id="correo" name="correo" placeholder="example@mail.com" required>
             </li>
           </div>
 
           <div class="telefono">
             <li>
               <label for="telefono">Teléfono:</label>
-              <input type="number" id="telefono" name="telefono" placeholder="000000000 ">
+              <input type="number" id="telefono" name="telefono" placeholder="9XXXXXXXX"  required>
             </li>
           </div>
 
@@ -54,7 +56,7 @@
 
           <div class="lenguaje">
             <li>
-              <label for="lenguajes">Selecciona 1 o más lenguajes de programación de su interés:</label><br>
+              <label for="lenguajes" >Selecciona 1 o más lenguajes de programación de su interés:</label><br>
                 <br>
                 <input type="checkbox" name="python" value="1"><span>Python</span><br>
                 <input type="checkbox" name="python" value="2"><span>Java</span><br>
@@ -70,7 +72,7 @@
           <div class="nivel">
             <li>
               <label for="nivel">¿Cual es su nivel de conocimiento en programación?</label><br>
-              <input type="range" id="nivel" name="nivel" value="" min="0" max="100">
+              <input type="range" id="nivel" name="nivel" min="0" max="10" step="1">
             </li>
           </div>
 
@@ -99,14 +101,14 @@
 
           <div class="boton">
             <li>
-              <button type="reset" name="button">Limpiar Datos</button>  <!-- a lo mejor hay que programar la funcion-->
-              <button type="submit" name="button">Enviar Datos</button>
+              <button type="button" name="button" id="limpiarDatos">Limpiar Datos</button>  <!--programar la funcion-->
+              <button type="submit" name="button" id="enviarDatos" >Enviar Datos</button>
             </li>
           </div>
         </ul>
       </fieldset>
     </form>
     <!--js-->
-    <script src="js/initiation.js" charset="utf-8" async defer ></script>
+    <script src="js/app.js" charset="utf-8" async defer ></script>
   </body>
 </html>

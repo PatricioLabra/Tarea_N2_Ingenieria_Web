@@ -3,7 +3,7 @@ body{
   background-size: 1600px;
 }
 
-form.formulario{
+#formulario{
   margin-left: 0.8%;
   margin-top: 0.8%;
   margin-right: 0.8%;
@@ -93,8 +93,14 @@ div.boton button{
 
 #telefono{
   width: 100px;
+  text-align: center;
 }
-
+#nombre{
+  text-align: center;
+}
+#apellido{
+  text-align: center;
+}
 #descripcion{
   margin-top: 1%;
   width: 600px;
@@ -105,4 +111,12 @@ div.boton button{
 #rut{
   width: 80px;
   text-align: center;
+}
+
+#correo{
+  width: 200px;
+  text-align: center;
+}
+div.mensaje{
+  display: none;
 }
